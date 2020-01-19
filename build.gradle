@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repo.aikar.co/nexus/content/groups/aikar/'
+    }
+}
+
+dependencies {
+    compile 'org.github.paperspigot:paperspigot-api:1.7.10-R0.1-SNAPSHOT'
+    compile 'com.sk89q:worldedit:6.0.0-SNAPSHOT'
+
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+}
